@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Volt Records</title>
+  <meta name="description" content="Read our latest music industry insights and artist tips.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <nav class="container">
+      <div class="logo">Volt Records</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="investors.html">Investors</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <h1 class="scroll-animate">Blog</h1>
+      <p class="hero-subtitle scroll-animate">Insights, tips, and stories from the music industry</p>
+    </div>
+  </section>
+
+  <!-- Search and Filter -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Latest Articles</h2>
+      </div>
+      
+      <!-- Search Bar -->
+      <div style="margin-bottom: 2rem;">
+        <input type="text" 
+               data-search="blog" 
+               placeholder="🔍 Search articles..."
+               style="width: 100%; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); background-color: rgba(36, 45, 71, 0.5); color: var(--text-primary); font-size: 1rem;">
+      </div>
+
+      <!-- Category Filter -->
+      <div style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+        <button class="btn btn-primary active" data-filter="all" data-filter-group="category">All</button>
+        <button class="btn btn-secondary" data-filter="production" data-filter-group="category">Production</button>
+        <button class="btn btn-secondary" data-filter="marketing" data-filter-group="category">Marketing</button>
+        <button class="btn btn-secondary" data-filter="distribution" data-filter-group="category">Distribution</button>
+        <button class="btn btn-secondary" data-filter="industry" data-filter-group="category">Industry</button>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="grid grid-2" data-search-container="blog">
+        <!-- Article 1 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="production">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Production</p>
+          <h3 class="card-title">The Art of Synthesizer Programming: Creating Unique Sounds</h3>
+          <p class="card-text">Learn the fundamentals of synthesizer programming and discover techniques used by professional producers to create unique, signature sounds that stand out in any mix.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>March 10, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="marketing">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Marketing</p>
+          <h3 class="card-title">TikTok Strategy: How to Grow Your Music Career on Social Media</h3>
+          <p class="card-text">Explore proven strategies for leveraging TikTok to build a fanbase, increase streams, and establish your artist brand. Real examples from successful Volt Records artists.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>March 8, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="distribution">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Distribution</p>
+          <h3 class="card-title">Music Distribution 2024: Getting Your Music on All Platforms</h3>
+          <p class="card-text">A comprehensive guide to getting your music distributed globally. Learn about metadata, ISRCs, timing, and best practices for maximizing your reach.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>March 5, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="industry">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Industry</p>
+          <h3 class="card-title">The Rise of Independent Labels: Why Artists are Going Independent</h3>
+          <p class="card-text">Analyzing trends in the independent music industry. Why more artists are choosing independence and what it means for the future of music.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>March 1, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="production">
+          <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Production</p>
+          <h3 class="card-title">Mixing Secrets: Professional Techniques for Polished Tracks</h3>
+          <p class="card-text">Discover professional mixing techniques including compression, EQ, and spatial effects. Learn how to take your productions to the next level with industry-standard approaches.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>February 28, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="marketing">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Marketing</p>
+          <h3 class="card-title">Building Your Artist Brand: From Anonymous to Recognizable</h3>
+          <p class="card-text">A step-by-step guide to creating a cohesive artist brand. Visual identity, messaging, and consistency across all platforms will help you stand out and connect with fans.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>February 24, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 7 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="distribution">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Distribution</p>
+          <h3 class="card-title">Understanding Royalties: How Independent Artists Make Money</h3>
+          <p class="card-text">A detailed breakdown of royalty structures, payment models, and how to maximize earnings as an independent artist. Learn about streaming rates and other revenue sources.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>February 20, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 8 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="industry">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Industry</p>
+          <h3 class="card-title">AI in Music Production: The Future of Creativity</h3>
+          <p class="card-text">Exploring how AI and machine learning are transforming music production. Tools, opportunities, and ethical considerations for the next generation of producers.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>February 15, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 9 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="marketing">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Marketing</p>
+          <h3 class="card-title">YouTube Strategies: Growing Your Music Channel</h3>
+          <p class="card-text">Master YouTube for independent artists. Learn about thumbnails, titles, playlists, and community management to grow subscribers and watch time consistently.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>February 10, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 10 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="production">
+          <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Production</p>
+          <h3 class="card-title">Mastering 101: Essential Techniques for Loud, Professional Sound</h3>
+          <p class="card-text">Learn the fundamentals of mastering, from loudness wars to streaming standards. Techniques and tools to prepare your tracks for final release.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>February 5, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 11 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="industry">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Industry</p>
+          <h3 class="card-title">Live Streaming Concerts: Building Audience During Lockdowns</h3>
+          <p class="card-text">Strategies for successful live streaming performances. Equipment, platforms, promotion, and how to monetize your online concerts effectively.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>January 30, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Article 12 -->
+        <div class="card scroll-animate" data-searchable="blog" data-filterable="category" data-filter-tag="distribution">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=600&h=400&fit=crop" alt="Article" class="card-image">
+          <p style="font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Distribution</p>
+          <h3 class="card-title">Playlist Pitching: Getting Your Music on Curated Playlists</h3>
+          <p class="card-text">A comprehensive guide to playlist pitching. How to approach curators, optimize your metadata, and increase your chances of playlist placements.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <span>January 25, 2024</span>
+            <a href="#" class="text-primary">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="alt-bg">
+    <div class="container text-center">
+      <div class="scroll-animate" style="max-width: 600px; margin: 0 auto;">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p style="margin-bottom: 2rem;">Get the latest insights, tips, and industry news delivered to your inbox weekly.</p>
+        <form>
+          <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+            <input type="email" placeholder="Your email" required style="flex: 1;">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">We respect your privacy. Unsubscribe anytime.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html">Distribution</a></li>
+            <li><a href="services.html">Artist Development</a></li>
+            <li><a href="services.html">Marketing</a></li>
+            <li><a href="booking.html">Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="releases.html">Releases</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="investors.html">Investors</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="mailto:info@voltrecords.com">info@voltrecords.com</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li><p style="margin: 0.5rem 0;">Los Angeles, CA</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Volt Records. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

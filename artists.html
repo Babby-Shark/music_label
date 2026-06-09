@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artists - Volt Records</title>
+  <meta name="description" content="Discover our talented roster of independent artists.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <nav class="container">
+      <div class="logo">Volt Records</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="investors.html">Investors</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <h1 class="scroll-animate">Our Artists</h1>
+      <p class="hero-subtitle scroll-animate">Meet the talented creators we represent</p>
+    </div>
+  </section>
+
+  <!-- Search and Filter -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Browse Artists</h2>
+      </div>
+      
+      <!-- Search Bar -->
+      <div style="margin-bottom: 2rem;">
+        <input type="text" 
+               data-search="artists" 
+               placeholder="🔍 Search artists, genres, or bio..."
+               style="width: 100%; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); background-color: rgba(36, 45, 71, 0.5); color: var(--text-primary); font-size: 1rem;">
+      </div>
+
+      <!-- Genre Filter -->
+      <div style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+        <button class="btn btn-primary active" data-filter="all" data-filter-group="genre">All Genres</button>
+        <button class="btn btn-secondary" data-filter="synthwave" data-filter-group="genre">Synthwave</button>
+        <button class="btn btn-secondary" data-filter="hiphop" data-filter-group="genre">Hip Hop</button>
+        <button class="btn btn-secondary" data-filter="randb" data-filter-group="genre">R&B / Soul</button>
+        <button class="btn btn-secondary" data-filter="alternative" data-filter-group="genre">Alternative</button>
+        <button class="btn btn-secondary" data-filter="electronic" data-filter-group="genre">Electronic</button>
+        <button class="btn btn-secondary" data-filter="indie" data-filter-group="genre">Indie</button>
+      </div>
+
+      <!-- Artists Grid -->
+      <div class="grid grid-4" data-search-container="artists">
+        <!-- Artist 1 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="synthwave">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop" alt="Luna Echo" class="artist-image">
+          <h3 class="artist-name">Luna Echo</h3>
+          <p class="artist-genre">Synthwave</p>
+          <p class="artist-bio">Visionary producer blending electronic and organic sounds with ethereal vocals</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=luna-echo" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 2 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="hiphop">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&h=300&fit=crop" alt="Marcus Stone" class="artist-image">
+          <h3 class="artist-name">Marcus Stone</h3>
+          <p class="artist-genre">Hip Hop</p>
+          <p class="artist-bio">Storyteller of street life with lyrical brilliance and hard-hitting beats</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=marcus-stone" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 3 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="randb">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=300&h=300&fit=crop" alt="Aria Wings" class="artist-image">
+          <h3 class="artist-name">Aria Wings</h3>
+          <p class="artist-genre">R&B / Soul</p>
+          <p class="artist-bio">Ethereal vocals with contemporary urban soul and emotional depth</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=aria-wings" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 4 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="alternative">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=300&h=300&fit=crop" alt="The Collective" class="artist-image">
+          <h3 class="artist-name">The Collective</h3>
+          <p class="artist-genre">Alternative</p>
+          <p class="artist-bio">Genre-defying experimental rock ensemble pushing boundaries</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=the-collective" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 5 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="electronic">
+          <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=300&h=300&fit=crop" alt="Pixel Sound" class="artist-image">
+          <h3 class="artist-name">Pixel Sound</h3>
+          <p class="artist-genre">Electronic</p>
+          <p class="artist-bio">Progressive electronic music with intricate soundscapes and futuristic vision</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=pixel-sound" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 6 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="indie">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&h=300&fit=crop" alt="Maya Sunlight" class="artist-image">
+          <h3 class="artist-name">Maya Sunlight</h3>
+          <p class="artist-genre">Indie</p>
+          <p class="artist-bio">Singer-songwriter creating intimate indie folk narratives with modern production</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=maya-sunlight" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 7 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="synthwave">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=300&h=300&fit=crop" alt="NeonWaves" class="artist-image">
+          <h3 class="artist-name">NeonWaves</h3>
+          <p class="artist-genre">Synthwave</p>
+          <p class="artist-bio">Retro-futuristic synthwave collective creating cinematic electronic journeys</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=neonwaves" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 8 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="randb">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop" alt="Smooth Vibes" class="artist-image">
+          <h3 class="artist-name">Smooth Vibes</h3>
+          <p class="artist-genre">R&B / Soul</p>
+          <p class="artist-bio">Contemporary R&B artist crafting smooth melodies with authentic soul</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=smooth-vibes" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 9 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="hiphop">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=300&h=300&fit=crop" alt="Echo Chamber" class="artist-image">
+          <h3 class="artist-name">Echo Chamber</h3>
+          <p class="artist-genre">Hip Hop</p>
+          <p class="artist-bio">Experimental hip-hop group blending multiple voices and innovative production</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=echo-chamber" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 10 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="indie">
+          <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=300&h=300&fit=crop" alt="Velvet Horizon" class="artist-image">
+          <h3 class="artist-name">Velvet Horizon</h3>
+          <p class="artist-genre">Indie</p>
+          <p class="artist-bio">Indie pop duo creating dreamy soundscapes with poetic lyrics</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=velvet-horizon" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 11 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="electronic">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=300&h=300&fit=crop" alt="Cyber Pulse" class="artist-image">
+          <h3 class="artist-name">Cyber Pulse</h3>
+          <p class="artist-genre">Electronic</p>
+          <p class="artist-bio">Techno and deep house producer creating hypnotic dance floor experiences</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=cyber-pulse" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+
+        <!-- Artist 12 -->
+        <div class="card artist-card scroll-animate" data-searchable="artists" data-filterable="genre" data-filter-tag="alternative">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&h=300&fit=crop" alt="Storm Rising" class="artist-image">
+          <h3 class="artist-name">Storm Rising</h3>
+          <p class="artist-genre">Alternative</p>
+          <p class="artist-bio">Alternative rock powerhouse with anthemic choruses and raw emotion</p>
+          <div class="social-links">
+            <a href="#" title="Spotify">🎵</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="YouTube">▶️</a>
+          </div>
+          <a href="artist-profile.html?id=storm-rising" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html">Distribution</a></li>
+            <li><a href="services.html">Artist Development</a></li>
+            <li><a href="services.html">Marketing</a></li>
+            <li><a href="booking.html">Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="releases.html">Releases</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="investors.html">Investors</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="mailto:info@voltrecords.com">info@voltrecords.com</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li><p style="margin: 0.5rem 0;">Los Angeles, CA</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Volt Records. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

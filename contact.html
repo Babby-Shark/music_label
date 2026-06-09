@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Volt Records</title>
+  <meta name="description" content="Get in touch with Volt Records. Contact our team for inquiries.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <nav class="container">
+      <div class="logo">Volt Records</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="investors.html">Investors</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <h1 class="scroll-animate">Get In Touch</h1>
+      <p class="hero-subtitle scroll-animate">We'd love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section>
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="card scroll-animate text-center">
+          <h3 style="font-size: 2.5rem; margin-bottom: 1rem;">📍</h3>
+          <h3>Office Location</h3>
+          <p>1000 Highland Ave<br>Los Angeles, CA 90038<br>United States</p>
+        </div>
+
+        <div class="card scroll-animate text-center">
+          <h3 style="font-size: 2.5rem; margin-bottom: 1rem;">📧</h3>
+          <h3>Email</h3>
+          <p><a href="mailto:info@voltrecords.com">info@voltrecords.com</a></p>
+          <p style="font-size: 0.9rem; margin-top: 1rem; color: var(--text-secondary);">General Inquiries</p>
+          <p style="margin-top: 0.5rem;"><a href="mailto:booking@voltrecords.com" style="font-size: 0.95rem;">booking@voltrecords.com</a></p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Artist Bookings</p>
+          <p style="margin-top: 0.5rem;"><a href="mailto:partnerships@voltrecords.com" style="font-size: 0.95rem;">partnerships@voltrecords.com</a></p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Partnerships & Collaborations</p>
+        </div>
+
+        <div class="card scroll-animate text-center">
+          <h3 style="font-size: 2.5rem; margin-bottom: 1rem;">📱</h3>
+          <h3>Phone</h3>
+          <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          <p style="font-size: 0.9rem; margin-top: 1rem; color: var(--text-secondary);">General Support</p>
+          <p style="margin-top: 1.5rem;"><a href="tel:+1234567891" style="font-size: 0.95rem;">+1 (234) 567-891</a></p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Artist Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Office Hours -->
+  <section class="alt-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Office Hours</h2>
+      </div>
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div class="card scroll-animate">
+          <table style="width: 100%; color: var(--text-secondary);">
+            <tr>
+              <td style="padding: 0.5rem 0; padding-right: 1rem;"><strong>Monday - Friday</strong></td>
+              <td style="padding: 0.5rem 0;">9:00 AM - 6:00 PM PT</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 0; padding-right: 1rem;"><strong>Saturday</strong></td>
+              <td style="padding: 0.5rem 0;">10:00 AM - 4:00 PM PT</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 0; padding-right: 1rem;"><strong>Sunday</strong></td>
+              <td style="padding: 0.5rem 0;">Closed</td>
+            </tr>
+          </table>
+          <p style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color); font-size: 0.9rem;">We respond to emails and messages within 24 hours during business days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Send us a Message</h2>
+        <p class="section-subtitle">Fill out the form below and we'll get back to you shortly</p>
+      </div>
+
+      <div class="grid grid-2 gap-2xl">
+        <div class="scroll-animate">
+          <form>
+            <div class="form-group">
+              <label for="name">Full Name*</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address*</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject*</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiry-type">Inquiry Type*</label>
+              <select id="inquiry-type" name="inquiry-type" required>
+                <option value="">Select inquiry type...</option>
+                <option value="artist-inquiry">Artist Inquiry</option>
+                <option value="booking">Booking Request</option>
+                <option value="investment">Investment Opportunity</option>
+                <option value="partnership">Partnership Inquiry</option>
+                <option value="media">Media/Press</option>
+                <option value="support">Technical Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message*</label>
+              <textarea id="message" name="message" required placeholder="Please provide details about your inquiry..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                Subscribe to our newsletter for updates and announcements
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <div class="scroll-animate">
+          <h3>Quick Links</h3>
+          <ul style="margin-left: 1.5rem; margin-bottom: 2rem; line-height: 2;">
+            <li><a href="about.html">Learn About Us</a></li>
+            <li><a href="services.html">View Services</a></li>
+            <li><a href="artists.html">Browse Artists</a></li>
+            <li><a href="booking.html">Book an Artist</a></li>
+            <li><a href="investors.html">Investment Info</a></li>
+            <li><a href="blog.html">Read Our Blog</a></li>
+          </ul>
+
+          <h3>Follow Us</h3>
+          <div class="social-links" style="margin-bottom: 2rem;">
+            <a href="#" title="Instagram" style="font-size: 1.3rem;">📷</a>
+            <a href="#" title="Twitter" style="font-size: 1.3rem;">𝕏</a>
+            <a href="#" title="YouTube" style="font-size: 1.3rem;">▶️</a>
+            <a href="#" title="TikTok" style="font-size: 1.3rem;">🎵</a>
+            <a href="#" title="LinkedIn" style="font-size: 1.3rem;">💼</a>
+            <a href="#" title="Facebook" style="font-size: 1.3rem;">👥</a>
+          </div>
+
+          <h3>Departments</h3>
+          <div style="display: grid; gap: 1rem;">
+            <div class="card">
+              <h4>Artist Development</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Join our roster</p>
+              <a href="mailto:artists@voltrecords.com">artists@voltrecords.com</a>
+            </div>
+            <div class="card">
+              <h4>Distribution & Releases</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Distribute your music</p>
+              <a href="mailto:distribution@voltrecords.com">distribution@voltrecords.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="alt-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Location</h2>
+      </div>
+      <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-color); height: 400px; background: linear-gradient(135deg, rgba(0, 230, 118, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%); display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center;">
+          <h3 style="font-size: 2rem; margin-bottom: 1rem;">📍</h3>
+          <p style="font-size: 1.1rem; color: var(--primary-color);">Volt Records</p>
+          <p style="color: var(--text-secondary);">1000 Highland Ave, Los Angeles, CA 90038</p>
+          <p style="margin-top: 1rem;"><a href="#" class="btn btn-secondary">Get Directions</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="card scroll-animate mb-3">
+          <h3 style="color: var(--primary-color);">How long does it take to get a response?</h3>
+          <p>We aim to respond to all inquiries within 24-48 hours during business days. During weekends and holidays, responses may take longer.</p>
+        </div>
+
+        <div class="card scroll-animate mb-3">
+          <h3 style="color: var(--primary-color);">How do I become an artist with Volt Records?</h3>
+          <p>Interested artists should contact our A&R department at artists@voltrecords.com with your music portfolio, bio, and press kit. We review all submissions and respond to promising candidates.</p>
+        </div>
+
+        <div class="card scroll-animate mb-3">
+          <h3 style="color: var(--primary-color);">Can I distribute my music through Volt Records?</h3>
+          <p>Yes! We offer distribution services for independent artists. Contact distribution@voltrecords.com or visit our services page to learn more about our distribution packages.</p>
+        </div>
+
+        <div class="card scroll-animate mb-3">
+          <h3 style="color: var(--primary-color);">Do you accept business proposals and partnerships?</h3>
+          <p>We're always interested in strategic partnerships and collaborations. Send your proposal to partnerships@voltrecords.com with relevant details about your business or service.</p>
+        </div>
+
+        <div class="card scroll-animate mb-3">
+          <h3 style="color: var(--primary-color);">How do I book an artist from Volt Records?</h3>
+          <p>Visit our booking page or email booking@voltrecords.com with your event details. Our team will work with you to find the perfect artist for your needs.</p>
+        </div>
+
+        <div class="card scroll-animate">
+          <h3 style="color: var(--primary-color);">What are your investment opportunities?</h3>
+          <p>We offer equity investments, revenue sharing, and debt financing options. Contact our investor relations team at investors@voltrecords.com for detailed information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="alt-bg">
+    <div class="container text-center">
+      <div class="scroll-animate">
+        <h2>Ready to Collaborate?</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Let's create something amazing together</p>
+        <a href="#" class="btn btn-primary">Start a Conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html">Distribution</a></li>
+            <li><a href="services.html">Artist Development</a></li>
+            <li><a href="services.html">Marketing</a></li>
+            <li><a href="booking.html">Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="releases.html">Releases</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="investors.html">Investors</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="mailto:info@voltrecords.com">info@voltrecords.com</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li><p style="margin: 0.5rem 0;">Los Angeles, CA</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Volt Records. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
